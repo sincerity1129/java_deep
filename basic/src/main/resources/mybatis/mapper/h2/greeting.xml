@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.web.basic.mapper.GreetingMapper">
+
+    <!-- 사용자 정보 조회 -->
+    <select id="listGreeting" resultType="Greeting">
+        select
+            id,
+            name,
+            content,
+            create_date_time
+        from greeting
+    </select>
+</mapper>
